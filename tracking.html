@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tracking</title>
+    <link rel="stylesheet" href="./stylesheets/global.css">
+    <link rel="stylesheet" href="./stylesheets/tracking.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <main>
+
+      <!-- main image -->
+      <div class="layer-1">
+        <img src="./images/north_east_us.png" alt="North East US" id="background-img">
+      </div>
+
+      <!-- main pane -->
+      <div class="layer0 main-pane">
+        <form id="tn-form">
+          <div class="columns">
+            <label for="trackingNumber" id="tracking-number-lbl">Tracking Number:</label><br>
+            <input type="text" id="tracking-number" name="trackingNumber"><br>
+          </div>
+          <input type="submit" value="Track" id="track">
+        </form>
+      </div>
+
+      <!-- expanding menu -->
+      <div class="layer1">
+        <div id="menu-t" class="menu-small">
+          <img src="./images/logo.png" alt="Logo" id="logo-img-t" class="logo-img">
+          <div class="menu-items-frame">
+            <div id="menu-items-t" class="menu-items">
+              <a href="./index.html"><p>Home</p></a>
+              <a href="./services.html"><p>Services</p></a>
+              <a href="./tracking.html"><p>Tracking</p></a>
+              <a href="./contact.html"><p>Contact Us</p></a>
+              <a href="#"><p>Exit</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="./code/tracking.js"></script>
+  </body>
+</html>
+

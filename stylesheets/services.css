@@ -1,0 +1,16 @@
+#logo-img-s {
+  height: 50px;
+  transform: translate(100px, 110px);
+}
+
+#menu-s {
+  position: fixed;
+}
+
+#menu-items-s {
+  display: none;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+}
