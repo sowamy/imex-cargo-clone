@@ -11,16 +11,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
+
+    <!-- Background (Video) -->
+    <div class="layer-1">
+      <video id="background-video" autoplay loop muted>
+        <source src="./videos/bgvideo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Main Pane -->
     <main>
-
-      <!-- Background (Video) -->
-      <div class="layer-1">
-        <video id="background-video" autoplay loop muted>
-          <source src="./videos/bgvideo.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <!-- Scrollable Pane -->
       <div class="layer0 main-pane">
 
         <!-- Core Content - Group 1 -->
@@ -78,19 +78,19 @@
         <!-- Core Content - Group 2 -->
         <div class="group2">
           <div class="group2-pane">
-            <div>
+            <div class="left-quote">
               <p>“We know we can always count on ImEx to get our products to our customers on time.”</p>
             </div>
-            <div>
+            <div class="right-quote">
               <p>“ImEx Cargo is the only GSA that continues to deliver revenue.”</p>
             </div>
-            <div>
+            <div class="left-quote">
               <p>“In logistics, you find challenges around every corner. ImEx handles exceptions without missing a beat.”</p>
             </div>
-            <div>
+            <div class="right-quote">
               <p>“They are professional and knowledgeable, and they make my life easier.”</p>
             </div>
-            <div>
+            <div id="punchline">
               <div>
                 <p>We Work</p>
               </div>
@@ -107,29 +107,26 @@
           </div>
         </div>
 
-        <!-- Core Content - Footer -->
-        <div class="layer0">
-        </div>
-
-      </div>
-
-      <!-- Expanding Menu -->
-      <div class="layer1">
-        <div id="menu-h" class="menu-small">
-          <img src="./images/logo.png" alt="Logo" id="logo-img-h" class="logo-img">
-          <div class="menu-items-frame">
-            <div id="menu-items-h" class="menu-items">
-              <a href="./index.html"><p>Home</p></a>
-              <a href="./services.html"><p>Services</p></a>
-              <a href="./tracking.html"><p>Tracking</p></a>
-              <a href="./contact.html"><p>Contact Us</p></a>
-              <a href="#"><p>Exit</p></a>
-            </div>
-          </div>
-        </div>
       </div>
 
     </main>
+
+    <!-- Expanding Menu -->
+    <div class="layer1">
+      <div id="menu-h" class="menu-small">
+        <img src="./images/logo.png" alt="Logo" id="logo-img-h" class="logo-img">
+        <div class="menu-items-frame">
+          <div id="menu-items-h" class="menu-items">
+            <a href="./index.html"><p>Home</p></a>
+            <a href="./services.html"><p>Services</p></a>
+            <a href="./tracking.html"><p>Tracking</p></a>
+            <a href="./contact.html"><p>Contact Us</p></a>
+            <a href="#"><p>Exit</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./code/index.js"></script>
   </body>
 </html>

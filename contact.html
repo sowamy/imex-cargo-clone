@@ -16,19 +16,24 @@
       <!-- core content -->
       <div class="layer0">
         <form id="contact-form">
-          <div class="columns">
-            <label for="contact-name" id="contact-name-lbl">Name:</label><br>
-            <input type="text" id="contact-name" name="contact-name"><br>
-          </div>
-          <div class="columns">
-            <label for="contact-email" id="contact-email-lbl">Email:</label><br>
-            <input type="text" id="contact-email" name="contact-email"><br>
-          </div>
-          <label for="message" id="message-lbl">Message:</label><br>
-          <input type="text" id="message" name="message"><br>
-          <div class="columns">
-            <label for="quote" id="quote-lbl">Quote:</label><br>
-            <input type="text" id="quote" name="quote"><br>
+          <div id="frame">
+            <div class="row">
+              <label for="contact-name" id="contact-name-lbl">Name:</label><br>
+              <input type="text" id="contact-name" name="contact-name"><br>
+            </div>
+            <div class="row">
+              <label for="contact-email" id="contact-email-lbl">Email:</label><br>
+              <input type="text" id="contact-email" name="contact-email"><br>
+            </div>
+            <div class="column">
+              <label for="message" id="message-lbl">Message:</label><br>
+              <textarea id="message" name="message" rows="2" cols="50"></textarea><br>
+            </div>
+            <div class="row">
+              <label for="quote" id="quote-lbl">Quote:</label><br>
+              <input type="text" id="quote" name="quote" value="$"><br>
+            </div>
+            <input type="submit" value="Submit" id="submit">
           </div>
         </form>
       </div>

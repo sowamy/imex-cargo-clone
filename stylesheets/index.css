@@ -17,6 +17,20 @@
   display: none;
 }
 
+#punchline {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#punchline > div > p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .columns {
   display: flex;
   flex-direction: row;
@@ -75,14 +89,43 @@
   justify-content: center;
 }
 
+@media screen and (min-width : 700px) and (max-width : 1200px) {
+  .group2-pane {
+    font-size: 25px;
+  }
+
+  .left-quote {
+    width: 500px;
+  }
+
+  .right-quote {
+    width: 500px;
+  }
+}
+
 .group2-pane {
   background-color: #FFFFFF;
   border-radius: 10px;
-  width: 85%;
+  width: 95%;
+  font-size: 40px;
+}
+
+.left-quote {
+  width: 1000px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 75px;
 }
 
 .main-pane {
   overflow-y:auto;
   position: absolute;
   width: 100%;
+}
+
+.right-quote {
+  width: 1000px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 75px;
 }

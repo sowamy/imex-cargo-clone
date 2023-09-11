@@ -20,13 +20,75 @@
 
       <!-- main pane -->
       <div class="layer0 main-pane">
-        <form id="tn-form">
-          <div class="columns">
+        <form id="tn-form" action="javascript:click()">
+          <div id="first-row" class="columns form1">
             <label for="trackingNumber" id="tracking-number-lbl">Tracking Number:</label><br>
-            <input type="text" id="tracking-number" name="trackingNumber"><br>
+            <input type="text" id="tracking-number" name="trackingNumber" /><br>
           </div>
           <input type="submit" value="Track" id="track">
         </form>
+        <div id="tracking-info" class="gone">
+          <div class="column">
+            <div class="row space">
+              <div class="column">
+                <div class="row">
+                  <p class="subtitle3">User ID:</p>
+                  <p id="user-id"></p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row aitems">
+                  <p class="subtitle2">Current Location:</p>
+                  <p id="current-location"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row space">
+            <div class="row">
+              <div class="column aitems">
+                <div class="row aitems">
+                  <p class="subtitle">Shipped</p>
+                  <div class="column">
+                    <div class="row">
+                      <p class="subtitle3">Date Shipped:</p>
+                      <p id="date-shipped"></p>
+                    </div>
+                    <div class="row">
+                      <p class="subtitle3">Time Shipped:</p>
+                      <p id="time-shipped"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="subtitle3">City:</p>
+                  <p id="shipped-from"></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column aitems">
+                <div class="row aitems">
+                  <p class="subtitle">Destination</p>
+                  <div class="column">
+                    <div class="row">
+                      <p class="subtitle3">Arrival Date:</p>
+                      <p id="arrival-date"></p>
+                    </div>
+                    <div class="row">
+                      <p class="subtitle3">Arrival Time:</p>
+                      <p id="arrival-time"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="subtitle3">City:</p>
+                  <p id="shipped-to"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- expanding menu -->
