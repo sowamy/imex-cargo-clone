@@ -9,6 +9,28 @@
   bottom: 0;
 }
 
+#logo-h {
+  transform: translate(65px, 65px);
+}
+
+#logo-h-1 {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+#logo-h-2 {
+  font-family: 'ABeeZee';
+  font-style: italic;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  transform: translate(-8px, -10px);
+}
+
 #menu-h {
   position: fixed;
 }
@@ -17,18 +39,48 @@
   display: none;
 }
 
-#punchline {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+#rotating-text {
+  transform: translate(-65px, -118px);
 }
 
-#punchline > div > p {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+#r-text > text {
+  color: rgb(65, 105, 225, .75);
+  font-weight: 600;
+  letter-spacing: 2.8px;
+  font-family: 'Advent Pro';
+  font-size: 11px;
+  fill: #111;
+}
+
+#r-text {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.center {
+  transform: translate(0px, 0px) !important;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .columns {
@@ -40,33 +92,61 @@
   width: 50%;
 }
 
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(83, 89, 138);
+  min-height: 500px;
+}
+
+.footer-pane {
+  width: 100%;
+  margin: 25px;
+  background-color: rgb(83, 89, 138);
+  color: rgb(255, 255, 255);
+}
+
 .group1 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
 .group1 > div {
-  background-color: rgb(65, 105, 225, .75);
-  border-radius: 10px;
   padding: 25px;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 500px;
+  background: rgba(180, 180, 180, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
 }
 
 .group1 p {
-  color: #FFFFFF;
-  font-size: 40px;
+  color: #fff;
   text-align: center;
   padding: 5px;
   margin: 5px;
+  font-family: 'Inter';
+  line-height: 58px;
+}
+
+.group1 ul {
+  color: #FFFFFF;
+  font-family: 'Abel';
+  font-style: medium;
+  font-weight: 400;
+  line-height: 35px;
 }
 
 .group1 li {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .group1:nth-of-type(1) {
@@ -74,58 +154,163 @@
 }
 
 .group1 > div:nth-of-type(even) {
-  margin-right: 50%;
-  margin-left: 50%;
+  margin-right: 30%;
 }
 
 .group1 > div:nth-of-type(odd) {
-  margin-right: 75%;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 .group2 {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-}
-
-@media screen and (min-width : 700px) and (max-width : 1200px) {
-  .group2-pane {
-    font-size: 25px;
-  }
-
-  .left-quote {
-    width: 500px;
-  }
-
-  .right-quote {
-    width: 500px;
-  }
+  margin: 0px 0px 500px 0px;
 }
 
 .group2-pane {
+  width: 95%;
   background-color: #FFFFFF;
   border-radius: 10px;
-  width: 95%;
+  margin: 25px;
   font-size: 40px;
 }
 
+.group2-pane p {
+  padding: 75px;
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.group2-pane > div {
+  width: 25%;
+  transition: transform 1s;
+}
+
+.group2-pane > div:first-of-type {
+  margin-top: 200px;
+}
+
+.group2-pane > div:last-of-type {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.group2-pane > div:last-of-type > div > p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Abel';
+  font-style: normal;
+  line-height: 100px;
+}
+
 .left-quote {
-  width: 1000px;
   text-align: left;
   margin-right: auto;
-  margin-left: 75px;
+  transform: translate(-500px, 0px);
 }
 
 .main-pane {
   overflow-y:auto;
-  position: absolute;
+  position: relative;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .right-quote {
-  width: 1000px;
   text-align: right;
   margin-left: auto;
-  margin-right: 75px;
+  transform: translate(500px, 0px);
+}
+
+/* desktop */
+@media screen and (min-width: 1501px ) {
+  .group1 > div {
+    width: 650px;
+  }
+
+  .group1 p {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .group2-pane p {
+    font-size: 50px;
+  }
+
+  .group2-pane > div {
+    min-width: 1200px;
+  }
+
+  .left-quote {
+    margin-left: 100px;
+  }
+
+  .right-quote {
+    margin-right: 100px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 701px ) and (max-width: 1500px) {
+  .group1 > div {
+    width: 550px;
+  }
+
+  .group1 p {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+  .group2-pane p {
+    font-size: 30px;
+  }
+
+  .group2-pane > div {
+    min-width: 700px;
+  }
+
+  .left-quote {
+    margin-left: 25px;
+  }
+
+  .right-quote {
+    margin-right: 25px;
+  }
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width : 700px) {
+  .group1 > div {
+    width: 330px;
+  }
+
+  .group1 p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .group2-pane p {
+    font-size: 20px;
+  }
+
+  .group2-pane > div {
+    min-width: 300px;
+  }
+
+  .left-quote {
+    margin-left: 0px;
+  }
+
+  .right-quote {
+    margin-right: 0px;
+  }
 }

@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="./stylesheets/global.css">
     <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Abel&family=Abril+Fatface&family=Advent+Pro&family=Inter&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="./code/index.js"></script>
   </head>
   <body>
 
@@ -26,10 +30,7 @@
         <!-- Core Content - Group 1 -->
         <div class="group1">
           <div>
-            <p>Logistics that Perform Under Pressure</p>
-          </div>
-          <div>
-            <p>4PL and 4PL Solutions to Companies of all Sizes</p>
+            <p>3PL/4PL Custom Supply Chain Solutions for Companies of all Sizes</p>
           </div>
           <div>
             <p>International and Domestic Shipping</p>
@@ -37,15 +38,15 @@
           <div>
             <p>Freight Options:</p>
             <ul>
-              <li>FTL</li>
-              <li>LTL</li>
+              <li>FTL - Full Truck Load</li>
+              <li>LTL - Less than Truck Load</li>
               <li>Refrigerated</li>
               <li>Flatbed</li>
               <li>Oversized</li>
               <li>Time Sensitive Loads</li>
             </ul>
           </div>
-          <div>
+          <!--div>
             <p>Types of Cargo We Handle:</p>
             <div class="columns">
               <div>
@@ -72,7 +73,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div-->
         </div>
 
         <!-- Core Content - Group 2 -->
@@ -90,7 +91,7 @@
             <div class="right-quote">
               <p>“They are professional and knowledgeable, and they make my life easier.”</p>
             </div>
-            <div id="punchline">
+            <div>
               <div>
                 <p>We Work</p>
               </div>
@@ -107,14 +108,45 @@
           </div>
         </div>
 
-      </div>
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer-pane">
+            <div>
+              <p>Logistics that Perform Under Pressure</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- END - Main Pane -->
 
     </main>
 
     <!-- Expanding Menu -->
     <div class="layer1">
       <div id="menu-h" class="menu-small">
-        <img src="./images/logo.png" alt="Logo" id="logo-img-h" class="logo-img">
+        <div id="logo-h">
+          <div id="center-text">
+            <h1 id="logo-h-1">ImEx</h1>
+            <h1 id="logo-h-2">Cargo</h1>
+          </div>
+          <div id="rotating-text">
+            <svg id="r-text" viewBox="0 0 180 180" width="180" height="180">
+              <defs>
+                <path id="circle" d="M 90, 90
+                        m -45, 0
+                        a 45, 45 0 1, 0 90, 0
+                        a 45, 45 0 1, 0 -90, 0
+                        ">
+                </path>
+              </defs>
+              <text width="400">
+                <textPath alignment-baseline="top" xlink:href="#circle" class="text">
+                  Logistics that perform under pressure. 
+                </textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
         <div class="menu-items-frame">
           <div id="menu-items-h" class="menu-items">
             <a href="./index.html"><p>Home</p></a>
@@ -126,8 +158,6 @@
         </div>
       </div>
     </div>
-
-    <script src="./code/index.js"></script>
   </body>
 </html>
 

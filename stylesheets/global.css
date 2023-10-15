@@ -2,6 +2,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -39,13 +49,18 @@ a {
 .menu-small {
   background: rgb(255, 255, 255);
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   top: 0%;
   left: 0%;
-  margin-left: -75px;
-  margin-top: -75px;
+  margin-left: -40px;
+  margin-top: -30px;
   transition: all .5s;
+}
+
+.menu-small > h1 {
+  transform: translate(90px,85px);
+  font-size: 24px;
 }
 
 .menu-items {
@@ -60,7 +75,6 @@ a {
 }
 
 .menu-items-frame {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
