@@ -1,7 +1,7 @@
 var $menu = $('#menu-h')
 var $menuItems = $('#menu-items-h')
 var $logo = $('#logo-h')
-let groupChildren = document.querySelector(".group2-pane").children
+let groupChildren = document.querySelector("#quotes-pane").children
 
 $menu.click(function(){
   $menu.toggleClass('menu-small menu-big')
